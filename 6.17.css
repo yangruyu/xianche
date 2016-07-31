@@ -1,0 +1,284 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.bjt{
+	position: fixed;
+	top:0;bottom: 0;left: 0;right: 0;
+	margin: auto;
+	background: url(610812_142842998708_2.jpg);
+	background-size: cover;
+}
+.bure{
+	width: 1060px;
+	height: 530px;
+	position: absolute;
+	top:0;bottom: 0;
+	left: 0;right: 0;
+	margin: auto;
+
+}
+
+.bure li {
+	width: 260px;
+	height: 260px;
+	margin-top:4px;
+	margin-left: 4px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+
+}
+.bure li img{
+	width: 100%;height: 100%;
+	transition:all 0.8s ease;
+	background-size:100% ;
+}
+.bure li a:hover img{
+	transform:scale(1.2,1.2);
+}
+
+.button{
+	width: 70px;
+	height: 40px;
+	background: #283153;
+	position: absolute;
+	top:10px;right:0;left: 0;
+	margin: auto;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+	border-radius:5px;
+
+}
+.bure li a {
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+.info{
+	width: 100%;
+	height: 50px;
+	background:rgba(0,0,0,0.7);
+	position: absolute;
+	bottom:0;left: 0; 
+	transform:translateY(100%);
+	transition:all 0.8s ease;
+    z-index: 9;
+    text-align: center;
+    line-height: 50px;
+	color: #fff;
+
+}
+.bure li a:hover +.info{
+	transform:translateY(0);
+}
+.table{
+	width: 1000px;
+	height: auto;
+	border: 1px solid #ccc;
+	margin: 10px auto;
+	text-align: center;
+}
+.table tbody tr:nth-child(2n+1){
+	background: #ccc;
+}
+.table tr td{
+	position: relative;
+	
+}
+.table input{
+	position: relative;
+	outline: none;
+	-webkit-appearance:none;
+	appearance:none;
+}
+.table input::after{
+	content:"";
+	display: block;
+	width: 15px;
+	height:15px;
+    border: 1px solid #000;
+	position: absolute;
+	top:-15px;left: -20px;
+
+
+}
+.table input:checked::after{
+		background: url('th.jpg')no-repeat center center;
+		background-size:20px 20px;
+}
+.search{
+	width: 1000px;
+	height: 40px;
+	outline: none;
+	margin:0 auto;
+	display: block;
+	margin-top:30px;
+	text-align: center;
+	border: none;
+	border-bottom:1px solid #000;
+
+}
+.table tr{
+	height: 50px;
+	transition:all .3s ease;
+	transform:translateX(0); 
+}
+.table tr.hide{
+	transform:translateX(-100%); 
+	opacity: 0;
+	height: 0;
+
+}
+.table tr.hide td{
+	font-size: 0;
+	line-height: 0;
+}
+.test{
+    width: 10px;
+    height: 100px;
+    border: 2px solid #000;
+    margin: 5px;
+    float: left;
+    transition:all .2s ease;
+}
+
+.clear{
+	clear:both;
+}
+.cart.show{
+  height: 100%;
+  opacity: 1;
+}
+.cart{
+opacity: 0;
+z-index: 10000;
+position:fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(0,0,0,0.8);
+width: 100%;
+height: 0;
+transition:all 0.5s ease;
+overflow: hidden;
+}
+
+.close{
+position: absolute;;
+top:30px;
+left:1200px;
+position: 10px 30px;
+cursor: pointer;
+width: 60px;
+height: 30px;
+	color: #f6fff7;
+	text-align: center;
+	line-height: 30px;
+background: #0c0853;
+	border-radius: 5px;
+}
+.cart .rongqi{
+	width: 600px;
+	height: 100%;
+	margin: 0 auto;
+	background: rgba(255,255,255,0.5);
+	position: relative;
+	overflow: hidden;
+
+}
+.cart .rongqi img{
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:25% auto;
+	display: block;
+	position:relative;
+
+
+
+}
+.first{
+	position: absolute;
+	top:0;
+	bottom: 0;
+	margin: auto;
+	font-size: 30px;
+	text-align: center;
+	line-height: 80px;
+	width: 100%;
+	height: 80px;
+	background:rgba(255,255,255,0.9);
+}
+.last{
+	position: absolute;
+	top:0;left: 0;
+	bottom: 0;right: 0;
+	margin: auto;
+	font-size: 30px;
+	text-align: center;
+	line-height: 80px;
+	width: 100%;
+	height: 80px;
+	background:rgba(255,255,255,0.9);
+	
+}
+.guan{
+	display: none;
+}
+.testk{
+	width: 800px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+
+
+
+
+.finer{
+	width: 800px;
+	height: 600px;
+	margin: 10px auto;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+
+}
+.finer .circle{
+	border-radius: 50%;
+	position: absolute;
+	transition:all .8s ease;
+}
+.finer:hover .zuo{
+	transform:translateX(200%); 
+}
+.finer:hover .you{
+	transform:translateX(-100%); 
+}
+.finer .rongqi{
+	width: 600px;
+	height:100px;
+	background:rgba(0,0,0,0.9);
+	position: relative;
+	z-index: 88888;
+	margin-left:100px;
+}
+.finer .rongqi .circle{
+	position: static;
+	margin-left: 5px;
+	float: left;
+}
+.finer .wrap{
+	position: absolute;
+	border: 1px solid black;
+}
